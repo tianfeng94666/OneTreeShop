@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff0f2f5"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/maincolor"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/suggest_back_imgbtn"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:padding="5dp"
+            android:background="@mipmap/back"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="意见反馈"
+            android:textColor="@color/white"
+            android:gravity="center|left"
+            android:textSize="18dp"
+            android:layout_weight="2"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="5"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="请选择您要反馈的问题类型（单选）"
+        android:textSize="15dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.8" />
+
+                <RadioButton
+                    android:id="@+id/suggest_tv1"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/suggest_btn_select"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="功能建议"
+                    android:textColor="@color/producttextcolor" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/suggest_tv2"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/suggest_btn_select"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="购买遇到问题"
+                    android:textColor="@color/producttextcolor" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.8" />
+
+                <RadioButton
+                    android:id="@+id/suggest_tv3"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/suggest_btn_select"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="性能问题"
+                    android:textColor="@color/producttextcolor" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/suggest_tv4"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/suggest_btn_select"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="其他问题"
+                    android:textColor="@color/producttextcolor" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.8" />
+            </LinearLayout>
+        </LinearLayout>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/suggest_et"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="4"
+            android:background="@drawable/shape_shop_edit"
+            android:gravity="top"
+            android:hint="请输入您的建议，140字以内。"
+            android:maxLength="140"
+            android:padding="20dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/btn_suggest"
+            android:gravity="center"
+            android:background="@drawable/selector_btn_pay"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:text="提       交" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp" 
+            android:layout_weight="0.5"
+            />
+    </LinearLayout>
+
+</LinearLayout>

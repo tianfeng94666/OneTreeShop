@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_gray_text"
+              android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/but_graycolor"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/myorders_back_imgbtn"
+            android:layout_width="0dp"
+            android:padding="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="我的订单"
+            android:gravity="center|left"
+            android:layout_weight="2"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView android:id="@+id/tv_title_allorders"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="商品"/>
+            <View
+                android:id="@+id/vw_title_allorders"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="2dp"
+                android:background="@color/maincolor"/>
+        </LinearLayout>
+
+        <View android:layout_width="1dp"
+              android:layout_height="match_parent"
+              android:background="@color/gray"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView android:id="@+id/tv_titile_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="评价"/>
+            <View
+                android:id="@+id/vw_titile_evaluate"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="2dp"
+                android:background="@color/maincolor"/>
+        </LinearLayout>
+    </LinearLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_orders"
+            android:background="@color/bg_gray_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+        android:layout_weight="10">
+        </android.support.v4.view.ViewPager>
+</LinearLayout>

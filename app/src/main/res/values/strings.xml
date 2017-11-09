@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">OneTreeShops</string>
+    <!--indexactivity-->
+    <string name="titile">一棵树农贸</string>
+    <string name="MerchantManagement">商户管理</string>
+    <string name="settleaccounts">交班</string>
+    <string name="chargeback">退单</string>
+    <string name="cashbox">钱箱</string>
+    <string name="all">所有</string>
+    <string name="meat">肉类</string>
+    <string name="greens">时蔬</string>
+    <string name="birds">禽类</string>
+    <string name="seafood">海鲜</string>
+    <string name="dryCargo">干货</string>
+    <!--activity_login-->
+    <string name="username">用户名：</string>
+    <string name="password">密码：</string>
+    <string name="login">登录</string>
+    <string name="changpassword">修改密码？</string>
+    <!--activity_merchatmanagement-->
+    <string name="userManagement">用户管理</string>
+    <string name="cashierDesk">收银台</string>
+    <string name="retailOrders">零售订单</string>
+    <string name="productCategory">产品分类</string>
+    <string name="shiftRecords">交班记录</string>
+    <string name="saleBill">销售账单</string>
+    <!--SerialPortService-->
+    <string name="error_configuration">Please configure your serial port first.</string>
+    <string name="error_security">You do not have read/write permission to the serial port.</string>
+    <string name="error_unknown">The serial port can not be opened for an unknown reason.</string>
+    <!--XListvie-->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_header_hint_success">刷新成功</string>
+    <string name="xlistview_header_hint_failt">刷新失败</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <!--RetailorderItem-->
+    <string name="orderNumber">订单号：</string>
+    <string name="merchantNumber">商户号：</string>
+    <string name="portNumber">端口号：</string>
+    <string name="memberNumber">会员号：</string>
+    <!--marketManagerfragment-->
+    <string name="turnover">昨日营业额（元)</string>
+    <string name="member_pay">会员支付:</string>
+    <string name="cash_pay">现金支付:</string>
+    <string name="weixing_pay">微信支付:</string>
+</resources>

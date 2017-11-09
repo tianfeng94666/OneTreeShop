@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/lightred"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/tv_hour_decade"
+        style="@style/RushBuyCountDownTimerViewStyle" />
+
+    <TextView
+        android:id="@+id/tv_hour_unit"
+        style="@style/RushBuyCountDownTimerViewStyle"
+        android:layout_marginLeft="1dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="时"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_min_decade"
+        style="@style/RushBuyCountDownTimerViewStyle" />
+
+    <TextView
+        android:id="@+id/tv_min_unit"
+        style="@style/RushBuyCountDownTimerViewStyle"
+        android:layout_marginLeft="1dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="分"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_sec_decade"
+        style="@style/RushBuyCountDownTimerViewStyle" />
+
+    <TextView
+        android:id="@+id/tv_sec_unit"
+        style="@style/RushBuyCountDownTimerViewStyle"
+        android:layout_marginLeft="1dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="秒后自动关闭"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

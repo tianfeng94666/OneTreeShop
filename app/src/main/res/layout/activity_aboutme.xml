@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <LinearLayout
+         android:id="@+id/main_title"
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:background="@color/maincolor"
+         android:orientation="horizontal">
+          <ImageButton
+              android:id="@+id/xml_back_imgbtn"
+              android:layout_width="45dp"
+              android:layout_height="match_parent"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="8dp"
+              android:padding="5dp"
+              android:background="@mipmap/back"/>
+          <TextView
+              android:id="@+id/textview_title"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:text="注册协议"
+              android:textColor="@color/white"
+              android:textSize="18sp"
+              android:gravity="center|left"
+              android:layout_weight="2"/>
+          <View android:layout_width="0dp" android:layout_height="match_parent"
+              android:layout_weight="5"/>
+     </LinearLayout>
+     
+     <WebView 
+         android:id="@+id/wv_about_me"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF4001</color>
+    <color name="gray">#CACACA</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#0EABE8</color>
+    <color name="bg_gray_text">#E5E5E5</color>        <!-- 文字灰色背景 -->
+    <color name="bg_totalmoney_text">#585756</color>        <!-- 文字灰色背景 -->
+    <color name="bg_gray_list">#EFEFEF</color>    <!-- 分类列表灰色背景 -->
+    <color name="bg_graylight_list">#93999A</color>    <!-- 点菜列表灰色 -->
+    <color name="gray_txt">#ffaaaaaa</color>
+    <color name="dark_gray">#555555</color>
+    <color name="bluc">#6699FF</color>
+    <color name="bg_blue">#038DFC</color> <!-- 按钮蓝色 -->
+    <color name="bg_gray">#B5B5B5</color> <!-- 按钮按下时灰色 -->
+    <color name="bg_gray_edtitext">#EEEEEE</color> <!-- 输入框的背景灰色 -->
+    <color name="bg_gray_member">#626262</color> <!-- 会员信息条目深灰色 -->
+    <color name="bg_line">#CBCBCB</color>
+    <color name="stoke">#D7D7D7</color>
+    <color name="rechange_text">#474546</color><!-- 充值字体的颜色，灰色 -->
+    <color name="bg_orange">#F7921C</color><!-- 修改会员信息颜色，橙色 -->
+    <!-- 日历控件 -->
+    <color name="calendar_week_workday">#007AC1</color>
+    <color name="calendar_week_workend">#FFA600</color>
+    <color name="transparent_30">#30000000</color>
+
+    <color name="lightred">#CC0000</color>
+    <color name="red">#FF0000</color>
+    <!--主色调-->
+    <color name="maincolor">#009943</color>
+    <color name="textcolor">#7B7F88</color>
+    <color name="memeberpaytext">@android:color/black</color>
+    <color name="but_confirm">#FF6B6B</color>
+    <color name="textdetail">#4C3C35</color>
+ <color name="but_graycolor">#CACACA</color>
+    <color name="bg_green">#008F97</color>
+    <color name="bg_user_manager">#393F4F</color>
+    <!--字体颜色-->
+    <color name="producttextcolor">#474546</color>
+    <!--目录背景颜色-->
+    <color name="productbackground">#EFEFEF</color>
+<color name="product_text">#3A3839</color>
+
+    <color name="selectable_pressed">#1e000000</color>
+    <color name="selectable_ripple">#27000000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="drop_down_selected">#7B1FA2</color>
+    <color name="drop_down_unselected">#111111</color>
+
+    <color name="mask_color">#88888888</color>
+    <color name="check_bg">#f2f2f2</color>
+    <color name="un_press_color">#9C27B0</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#0effffff</color>
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/maincolor"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/mine_edit_back_imgbtn"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:padding="5dp"
+            android:background="@mipmap/back"/>
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="我的账户"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:gravity="center|left"
+            android:layout_weight="2"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/gray"/>
+        <LinearLayout
+            android:id="@+id/ll_set_myimage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_set_myimage"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="头像"
+                android:textSize="15sp"
+                android:textColor="@color/black" />
+            <!--<ImageView
+                android:id="@+id/mine_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@mipmap/mine_icon_person" />-->
+            <onetreeshopsapp.com.onetreeshops.utils.view.CircleImageView
+                android:id="@+id/mine_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:clickable="false"
+                android:layout_marginRight="10dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/mine_icon_person"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/white" />
+        </LinearLayout>
+
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/gray"/>
+        <TextView
+            android:id="@+id/mine_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3"
+            android:clickable="true"
+            android:drawablePadding="20.0dip"
+            android:drawableRight="@mipmap/arrow_next"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/gray"/>
+        <TextView
+            android:id="@+id/mine_sex"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3"
+            android:clickable="true"
+            android:drawablePadding="20.0dip"
+            android:drawableRight="@mipmap/arrow_next"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/gray"/>
+        <TextView
+            android:id="@+id/mine_job"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3"
+            android:clickable="true"
+            android:drawablePadding="20.0dip"
+            android:drawableRight="@mipmap/arrow_next"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/gray"/>
+        <TextView
+            android:id="@+id/mine_modify_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3"
+            android:clickable="true"
+            android:drawablePadding="20.0dip"
+            android:drawableRight="@mipmap/arrow_next"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="修改账户密码"
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/gray"/>
+        <LinearLayout
+            android:id="@+id/ll_set_mytelphone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3"
+            android:clickable="true"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:drawablePadding="20.0dip"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="已绑定手机号"
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/mine_telphone"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:drawableRight="@mipmap/arrow_next"
+                android:gravity="center|right"
+                android:textSize="15sp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+    </LinearLayout>
+
+</LinearLayout>

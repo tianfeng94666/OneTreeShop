@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/maincolor"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/modify_back_imgbtn"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:padding="5dp"
+            android:background="@mipmap/back"/>
+        <TextView
+            android:id="@+id/modify_textview_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="18sp"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:layout_weight="7"/>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/modify_editext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLength="50"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_modify_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:background="@drawable/selector_btn_pay"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text="保     存" />
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/maincolor"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/mineaddres_back_imgbtn"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:padding="5dp"
+            android:background="@mipmap/back"/>
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="我的地址"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_weight="2"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        android:orientation="vertical">
+    <ListView
+        android:id="@+id/lv_my_addres"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:divider="@null"
+        android:listSelector="#00000000"
+        android:visibility="gone"
+        android:scrollbars="none" />
+        <ImageView
+            android:id="@+id/iv_myaddres_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@mipmap/no_data" />
+
+        <TextView
+            android:id="@+id/tv_myaddres_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:text="暂无收货地址数据！"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+     <TextView
+         android:id="@+id/tv_add_myaddres"
+         android:layout_width="match_parent"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+         android:layout_marginBottom="10dp"
+         android:layout_height="0dp"
+         android:gravity="center"
+         android:background="@drawable/selector_btn_pay"
+         android:layout_weight="0.1"
+         android:textColor="@color/white"
+         android:text="+添加收获地址"/>
+
+</LinearLayout>

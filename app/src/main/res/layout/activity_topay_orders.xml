@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/bg_gray_text"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/maincolor"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/topayorders_back_imgbtn"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:padding="5dp"
+            android:background="@mipmap/back"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="待付款订单"
+            android:gravity="center|left"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_weight="3"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="5"/>
+    </LinearLayout>
+    <onetreeshopsapp.com.onetreeshops.utils.view.XListView
+        android:id="@+id/lv_topay_myorders"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:divider="@null"
+        android:listSelector="#00000000"
+        android:visibility="gone"
+        android:scrollbars="none"/>
+    <ImageView
+        android:id="@+id/iv_topay_orders_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:visibility="visible"
+        android:src="@mipmap/no_data" />
+
+    <TextView
+        android:id="@+id/tv_topay_orders_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:text="暂无待付款订单数据！去购物车看看吧！"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+    <LinearLayout
+        android:id="@+id/ll_topay_all"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom">
+    <CheckBox
+        android:id="@+id/cb_topay_select_all"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|left"
+        android:button="@drawable/selector_checkbox"
+        android:layout_marginLeft="10dp"
+        android:text="全选"/>
+
+        <TextView
+            android:id="@+id/tv_topay_totalmoney"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_height="match_parent" />
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:id="@+id/btn_topay"
+        android:gravity="center"
+        android:background="@drawable/selector_btn_pay"
+        android:layout_gravity="center|right"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:text="合并结算" />
+    </LinearLayout>
+
+</LinearLayout>
